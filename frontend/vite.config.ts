@@ -7,9 +7,17 @@ export default defineConfig({
   server: {
     port: 5173,
     proxy: {
-      // Local FastAPI during hackathon: avoid CORS by proxying /api → backend
-      "/api": { target: "http://127.0.0.1:8000", changeOrigin: true },
-      "/health": { target: "http://127.0.0.1:8000", changeOrigin: true },
+      // Proxy /api and /health to the Modal backend
+      "/api": {
+        target: "https://shrestha-sachin--mana-setu-http-api-dev.modal.run",
+        changeOrigin: true,
+        secure: true,
+      },
+      "/health": {
+        target: "https://shrestha-sachin--mana-setu-http-api-dev.modal.run",
+        changeOrigin: true,
+        secure: true,
+      },
     },
   },
 });

@@ -2,6 +2,8 @@
 node_modules/
 frontend/node_modules/
 backend/.venv/
+venv/
+.venv/
 __pycache__/
 *.py[cod]
 .Python
@@ -21,6 +23,8 @@ build/
 .idea/
 .vscode/
 *.swp
+*~
+Thumbs.db
 
 # Modal
 .modal/
@@ -28,3 +32,7 @@ build/
 # Logs
 *.log
 npm-debug.log*
+
+# Misc
+backend/package-lock.json
+

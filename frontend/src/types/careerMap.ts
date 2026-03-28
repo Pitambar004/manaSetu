@@ -2,7 +2,6 @@ import type { Edge, Node } from "@xyflow/react";
 
 /**
  * `data` payload expected on each career node (from Gemini JSON or FastAPI).
- * Extend as your schema grows (skills, links, etc.).
  */
 export type CareerNodeData = {
   label: string;
@@ -11,6 +10,8 @@ export type CareerNodeData = {
   timelineMonths?: number;
   readiness?: number;
   stressLevel?: "low" | "medium" | "high";
+  /** Short advice or description for the milestone */
+  description?: string;
 };
 
 export type CareerNode = Node<CareerNodeData, string | undefined>;
