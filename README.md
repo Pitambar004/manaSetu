@@ -106,7 +106,7 @@ The following environment variables are required for a full deployment:
 Sachin Shrestha – Backend Development <br>
 Sumit Karki – Frontend Development <br>
 Pitambar pandey– Frontend Development <br>
-Srijina Shrestha – Planning and Presentation <br>
+Srijana Shrestha – Planning Presentation & Documentation<br>
 Himal Subedi – Planning and Presentation <br>
 
 ---
